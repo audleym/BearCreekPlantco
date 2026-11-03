@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Bear Creek Plant Company">
+  <circle cx="256" cy="256" r="256" fill="#fbf8f1"/>
+  <circle cx="256" cy="256" r="240" fill="#1f3a1e"/>
+  <path d="M256 124 336 170 392 262V376H120V262L176 170Z" fill="#fbf8f1" stroke="#fbf8f1" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M256 300C206 300 170 270 164 222 214 218 252 250 256 300Z" fill="#1f3a1e"/>
+  <path d="M256 300C306 300 342 270 348 222 298 218 260 250 256 300Z" fill="#1f3a1e"/>
+  <path d="M256 290V350" fill="none" stroke="#1f3a1e" stroke-width="18" stroke-linecap="round"/>
+</svg>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/components/cart-context";
@@ -20,12 +21,14 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span
-            aria-hidden
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-green-700 text-base text-green-50"
-          >
-            🌿
-          </span>
+          <Image
+            src="/brand/logo-mark-256.png"
+            alt=""
+            width={44}
+            height={44}
+            preload
+            className="h-11 w-11 shrink-0"
+          />
           <span className="font-display text-lg font-semibold tracking-tight text-green-900 sm:text-xl">
             {siteConfig.name}
           </span>

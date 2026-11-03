@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { fullAddress, siteConfig } from "@/lib/site-config";
 import { CopyrightYear } from "@/components/copyright-year";
@@ -8,6 +9,13 @@ export function Footer() {
     <footer className="mt-16 border-t border-border bg-green-900 text-green-50">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr_1.4fr]">
         <div>
+          <Image
+            src="/brand/logo-mark-256.png"
+            alt={`${siteConfig.name} logo`}
+            width={112}
+            height={112}
+            className="mb-3 h-28 w-28"
+          />
           <p className="font-display text-xl font-semibold">{siteConfig.name}</p>
           <p className="mt-2 max-w-xs text-sm text-green-100">{siteConfig.tagline}</p>
           <a
