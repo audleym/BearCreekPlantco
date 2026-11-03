@@ -71,3 +71,26 @@ model Inquiry {
   message   String
   createdAt DateTime @default(now())
 }
+
+// Customer accounts — created the first time someone signs in with Google.
+model Customer {
+  id          String   @id @default(cuid())
+  googleSub   String   @unique // Google's stable account ID
+  email       String   @unique
+  name        String?
+  image       String?
+  createdAt   DateTime @default(now())
+  lastLoginAt DateTime @default(now())
+}
+
+// Email updates list. Rows are kept after unsubscribing (unsubscribedAt set)
+// so we remember not to re-add someone without their say-so.
+model Subscriber {
+  id               String    @id @default(cuid())
+  email            String    @unique
+  name             String?
+  source           String    @default("website") // website, account, checkout
+  unsubscribeToken String    @unique @default(cuid())
+  subscribedAt     DateTime  @default(now())
+  unsubscribedAt   DateTime?
+}

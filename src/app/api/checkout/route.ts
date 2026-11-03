@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import { stripe } from "@/lib/stripe";
+import { subscribe } from "@/lib/subscribers";
 
 const checkoutSchema = z.object({
   customer: z.object({
@@ -11,6 +12,7 @@ const checkoutSchema = z.object({
   }),
   pickupDateId: z.string().min(1, "Please choose a pickup date"),
   notes: z.string().optional(),
+  subscribe: z.boolean().optional(),
   items: z
     .array(
       z.object({
@@ -88,6 +90,13 @@ export async function POST(req: Request) {
       },
     },
   });
+
+  // Opt-in checkbox on the checkout form (unchecked by default).
+  if (parsed.data.subscribe) {
+    await subscribe(customer.email, { name: customer.name, source: "checkout" }).catch((err) =>
+      console.error("Newsletter signup at checkout failed", err),
+    );
+  }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 

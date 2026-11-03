@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/components/cart-context";
+import { AccountLink } from "@/components/account-link";
 import { siteConfig } from "@/lib/site-config";
 
 const navLinks = [
@@ -43,6 +44,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <AccountLink className="hidden items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-foreground/80 transition hover:text-green-700 md:inline-flex" />
           <Link
             href="/cart"
             className="relative inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-2 text-sm font-medium text-foreground transition hover:border-green-600 hover:text-green-700"
@@ -81,6 +83,12 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <AccountLink
+                onNavigate={() => setOpen(false)}
+                className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 hover:bg-green-50 hover:text-green-700"
+              />
+            </li>
           </ul>
         </nav>
       )}

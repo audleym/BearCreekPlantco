@@ -22,11 +22,14 @@ export default async function AdminDashboard() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <h1 className="font-display text-3xl font-semibold text-green-900">Admin Dashboard</h1>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <Link href="/admin/products" className="text-sm font-semibold text-green-700 hover:underline">
             Manage Products →
+          </Link>
+          <Link href="/admin/subscribers" className="text-sm font-semibold text-green-700 hover:underline">
+            Email Subscribers →
           </Link>
           <LogoutButton />
         </div>

@@ -6,7 +6,13 @@ import { formatPrice } from "@/lib/format";
 
 type PickupDate = { id: string; date: string };
 
-export function CheckoutForm({ pickupDates }: { pickupDates: PickupDate[] }) {
+export function CheckoutForm({
+  pickupDates,
+  defaults,
+}: {
+  pickupDates: PickupDate[];
+  defaults?: { name: string; email: string };
+}) {
   const { items, totalCents } = useCart();
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -35,6 +41,7 @@ export function CheckoutForm({ pickupDates }: { pickupDates: PickupDate[] }) {
       },
       pickupDateId: String(formData.get("pickupDateId") ?? ""),
       notes: String(formData.get("notes") ?? ""),
+      subscribe: formData.get("subscribe") === "on",
       items: items.map((i) => ({ productId: i.productId, quantity: i.quantity })),
     };
 
@@ -74,9 +81,16 @@ export function CheckoutForm({ pickupDates }: { pickupDates: PickupDate[] }) {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="Full name" name="name" required />
+        <Field label="Full name" name="name" required defaultValue={defaults?.name} />
         <Field label="Phone" name="phone" type="tel" required />
-        <Field label="Email" name="email" type="email" required className="sm:col-span-2" />
+        <Field
+          label="Email"
+          name="email"
+          type="email"
+          required
+          className="sm:col-span-2"
+          defaultValue={defaults?.email}
+        />
       </div>
 
       <div>
@@ -120,6 +134,14 @@ export function CheckoutForm({ pickupDates }: { pickupDates: PickupDate[] }) {
         />
       </div>
 
+      <label className="flex cursor-pointer items-start gap-3 text-sm text-foreground">
+        <input type="checkbox" name="subscribe" className="mt-0.5 h-4 w-4 accent-green-700" />
+        <span>
+          Email me about new plants, sales and pickup days{" "}
+          <span className="text-muted">(optional — unsubscribe anytime)</span>
+        </span>
+      </label>
+
       {error && <p className="text-sm font-medium text-terracotta-600">{error}</p>}
 
       <button
@@ -139,12 +161,14 @@ function Field({
   type = "text",
   required,
   className,
+  defaultValue,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   className?: string;
+  defaultValue?: string;
 }) {
   return (
     <div className={className}>
@@ -156,6 +180,7 @@ function Field({
         name={name}
         type={type}
         required={required}
+        defaultValue={defaultValue}
         className="mt-1 w-full rounded-lg border border-border bg-surface px-3 py-2 text-sm"
       />
     </div>

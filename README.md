@@ -53,6 +53,29 @@ npm run dev                  # http://localhost:3000
    directly in the database (e.g. with `npm run db:studio`, which opens a visual
    database editor) — there's no admin UI for pickup dates yet.
 
+### Customer sign-in with Google (optional)
+
+Customers can sign in with Google to see their past orders at `/account`, get their
+name/email pre-filled at checkout, and turn email updates on/off. The "Sign in" link
+stays hidden until these three variables are set:
+
+1. Go to https://console.cloud.google.com/apis/credentials → **Create credentials →
+   OAuth client ID** (if asked, first set up the consent screen: External, app name
+   "Bear Creek Plant Company", your email).
+2. Application type **Web application**. Under **Authorized redirect URIs** add
+   `https://bearcreekplantco.com/api/auth/google/callback` (and
+   `http://localhost:3000/api/auth/google/callback` for local testing).
+3. Put the client ID and secret in `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET`, and set
+   `SESSION_SECRET` to any long random string (in `.env.local` and in Vercel).
+
+### Email updates list
+
+There's a signup form in the footer of every page, an opt-in checkbox at checkout,
+and a toggle on `/account`. View subscribers and download a CSV at
+`/admin/subscribers` — import it into Mailchimp, a Gmail mail merge, etc. Each row
+has a personal `unsubscribe_url`; include it at the bottom of every email you send
+(it's required by anti-spam law, and it marks them unsubscribed here too).
+
 ### Stripe webhook (needed so paid orders actually get marked "paid")
 
 Stripe needs a way to tell the site when a payment succeeds.
