@@ -8,7 +8,7 @@ marketing site plus online ordering with Stripe checkout and in-store pickup.
 - **Public site**: Home, Shop (by category), product pages, About, Hours & Contact
 - **Cart & checkout**: client-side cart (localStorage) → Stripe Checkout → pickup-date order
 - **Admin area** (`/admin`): view/update orders, manage products & stock, read contact inquiries
-- **Database**: Prisma + SQLite for local dev (swap to Postgres for production — see below)
+- **Database**: Prisma + Postgres (hosted free on Neon) — same database for local dev and production
 - **Product catalog**: seeded from Bear Creek's actual spring order (`prisma/seed.ts`) — see below
 
 ## About the product photos
@@ -28,8 +28,9 @@ early real photos.
 ```bash
 npm install
 cp .env.example .env.local   # then also copy the same values into .env (Prisma CLI reads .env)
-npm run db:push              # creates the local database from prisma/schema.prisma
-npm run db:seed              # adds a starter catalog of plants + a few pickup dates
+                              # — DATABASE_URL should be your Neon connection string
+npm run db:push              # syncs the database schema from prisma/schema.prisma
+npm run db:seed              # loads/updates the product catalog + a few pickup dates
 npm run dev                  # http://localhost:3000
 ```
 
@@ -72,20 +73,18 @@ Stripe needs a way to tell the site when a payment succeeds.
 The easiest path is **[Vercel](https://vercel.com)** (made by the Next.js team, free tier
 is plenty for a small business site):
 
-1. Push this repo to GitHub.
-2. Import it into Vercel.
-3. **Switch the database to Postgres** — SQLite's a single file, which doesn't
-   persist on Vercel's serverless hosting. A free [Neon](https://neon.tech) Postgres
-   database works well:
-   - Create a Neon project, copy its connection string.
-   - In `prisma/schema.prisma`, change `provider = "sqlite"` to `provider = "postgresql"`.
-   - Set `DATABASE_URL` in Vercel's project settings to the Neon connection string.
-   - Run `npx prisma db push` once (pointed at the Neon database) to create the tables,
-     then `npm run db:seed` to add starter products.
-4. In Vercel's project settings, add the environment variables from `.env.example`
-   (`DATABASE_URL`, `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `ADMIN_PASSWORD`,
-   and `NEXT_PUBLIC_SITE_URL` set to your real domain).
-5. Add the Stripe webhook pointed at your live domain (see above).
+1. Push this repo to GitHub (already done — `audleym/BearCreekPlantco`).
+2. Import it into Vercel (vercel.com → Add New Project → pick the repo).
+3. In Vercel's project settings → Environment Variables, add everything from
+   `.env.example` with your real values (`DATABASE_URL` is the same Neon
+   connection string already in use; `STRIPE_SECRET_KEY`, `ADMIN_PASSWORD`, etc.
+   — `NEXT_PUBLIC_SITE_URL` should be set to your real `*.vercel.app` domain,
+   or your custom domain once you have one).
+4. Deploy. The database already has the schema and product catalog loaded, so
+   no extra setup is needed there.
+5. Add the Stripe webhook pointed at your live domain (see above), then set the
+   `STRIPE_WEBHOOK_SECRET` it gives you in Vercel's environment variables and
+   redeploy.
 6. If you have a domain already, point it at Vercel in your project's Domains settings.
 
 ## Useful commands

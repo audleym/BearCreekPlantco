@@ -1,13 +1,12 @@
 // Bear Creek Plant Company — database schema
-// Local dev uses SQLite (file:./dev.db). For production hosting (e.g. Vercel),
-// swap the datasource to Postgres (e.g. a free Neon database) — see README.md.
+// Uses Postgres (Neon) for both local dev and production — see README.md.
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
