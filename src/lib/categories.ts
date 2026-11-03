@@ -10,7 +10,12 @@ export const categories: Category[] = [
   {
     slug: "annual-flowers",
     name: "Annual Flowers",
-    blurb: "Petunias, calibrachoa, verbena, lantana, dahlias and more season-long color.",
+    blurb: "Petunias, calibrachoa, verbena, lantana and more season-long color.",
+  },
+  {
+    slug: "dahlias",
+    name: "Dahlias",
+    blurb: "Bold, everblooming dahlias bred for containers, beds, and borders.",
   },
   {
     slug: "geraniums",
