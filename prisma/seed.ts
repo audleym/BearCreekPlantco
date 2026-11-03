@@ -28,7 +28,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -38,7 +38,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -48,7 +48,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -58,7 +58,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -68,7 +68,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -78,7 +78,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Grown for bold leaf color — a standout in beds and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
     featured: true,
   },
@@ -89,7 +89,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Vivid, uniquely patterned foliage that keeps its color all summer in sun or shade.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -99,7 +99,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Grown for bold leaf color — a standout in beds and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -109,7 +109,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Vivid, uniquely patterned foliage that keeps its color all summer in sun or shade.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -119,7 +119,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Grown for bold leaf color — a standout in beds and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -129,7 +129,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Vivid, uniquely patterned foliage that keeps its color all summer in sun or shade.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -139,7 +139,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Grown for bold leaf color — a standout in beds and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -149,7 +149,7 @@ const products: SeedProduct[] = [
     category: "coleus-foliage",
     description: "Vivid, uniquely patterned foliage that keeps its color all summer in sun or shade.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -158,7 +158,7 @@ const products: SeedProduct[] = [
     name: "Dahlia Hypnotica Icarus",
     category: "dahlias",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
-    priceCents: 400,
+    priceCents: 500,
     size: "4.5\" pot",
     stock: 25,
   },
@@ -168,7 +168,7 @@ const products: SeedProduct[] = [
     name: "Dahlia Megaboom Fire",
     category: "dahlias",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
-    priceCents: 400,
+    priceCents: 500,
     size: "4.5\" pot",
     stock: 25,
   },
@@ -178,7 +178,7 @@ const products: SeedProduct[] = [
     name: "Dahlia Novation Yellow Bicolor",
     category: "dahlias",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
-    priceCents: 400,
+    priceCents: 500,
     size: "4.5\" pot",
     stock: 25,
   },
@@ -188,7 +188,7 @@ const products: SeedProduct[] = [
     name: "Dahlia Summer Bees Salmon Bicolor",
     category: "dahlias",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
-    priceCents: 400,
+    priceCents: 500,
     size: "4.5\" pot",
     stock: 25,
   },
@@ -198,7 +198,7 @@ const products: SeedProduct[] = [
     name: "Dahlia XXL Cancun",
     category: "dahlias",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
-    priceCents: 400,
+    priceCents: 500,
     size: "4.5\" pot",
     stock: 25,
     featured: true,
@@ -220,7 +220,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -230,7 +230,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "A strong, well-branched geranium grown for big, full flower clusters all season.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -240,7 +240,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "Classic greenhouse-grown geranium — reliable color for beds, pots, and window boxes.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -250,7 +250,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "A strong, well-branched geranium grown for big, full flower clusters all season.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -260,7 +260,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "Classic greenhouse-grown geranium — reliable color for beds, pots, and window boxes.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -270,7 +270,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "A strong, well-branched geranium grown for big, full flower clusters all season.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -280,7 +280,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "Classic greenhouse-grown geranium — reliable color for beds, pots, and window boxes.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -290,7 +290,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "A strong, well-branched geranium grown for big, full flower clusters all season.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -300,7 +300,7 @@ const products: SeedProduct[] = [
     category: "geraniums",
     description: "Classic greenhouse-grown geranium — reliable color for beds, pots, and window boxes.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
     featured: true,
   },
@@ -311,7 +311,7 @@ const products: SeedProduct[] = [
     category: "ornamental-grasses",
     description: "Texture and movement, greenhouse-grown and ready for containers or the landscape bed.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -321,7 +321,7 @@ const products: SeedProduct[] = [
     category: "ornamental-grasses",
     description: "Texture and movement, greenhouse-grown and ready for containers or the landscape bed.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -331,7 +331,7 @@ const products: SeedProduct[] = [
     category: "ornamental-grasses",
     description: "Texture and movement, greenhouse-grown and ready for containers or the landscape bed.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -341,7 +341,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -351,7 +351,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -361,7 +361,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -371,7 +371,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -381,7 +381,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -391,7 +391,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -401,7 +401,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -411,7 +411,7 @@ const products: SeedProduct[] = [
     category: "vines-trailing",
     description: "A vigorous trailing vine — the perfect spiller for baskets, window boxes, and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -421,7 +421,7 @@ const products: SeedProduct[] = [
     category: "vines-trailing",
     description: "A vigorous trailing vine — the perfect spiller for baskets, window boxes, and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -431,7 +431,7 @@ const products: SeedProduct[] = [
     category: "vines-trailing",
     description: "A vigorous trailing vine — the perfect spiller for baskets, window boxes, and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -441,7 +441,7 @@ const products: SeedProduct[] = [
     category: "vines-trailing",
     description: "A vigorous trailing vine — the perfect spiller for baskets, window boxes, and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -451,7 +451,7 @@ const products: SeedProduct[] = [
     category: "vines-trailing",
     description: "A vigorous trailing vine — the perfect spiller for baskets, window boxes, and mixed containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -461,7 +461,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -471,7 +471,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -481,7 +481,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -491,7 +491,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -501,7 +501,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -521,7 +521,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -531,7 +531,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -541,7 +541,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -551,7 +551,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -561,7 +561,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -571,7 +571,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -581,7 +581,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -591,7 +591,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -601,7 +601,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
     featured: true,
   },
@@ -612,7 +612,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -622,7 +622,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -632,7 +632,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -642,7 +642,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -652,7 +652,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -662,7 +662,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -672,7 +672,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -682,7 +682,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -692,7 +692,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -702,7 +702,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -712,7 +712,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -722,7 +722,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -732,7 +732,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -742,7 +742,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -752,7 +752,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -762,7 +762,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -772,7 +772,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -782,7 +782,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -792,7 +792,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -802,7 +802,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -812,7 +812,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -822,7 +822,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Dependable color from planting through frost — a Bear Creek greenhouse favorite.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -832,7 +832,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "Full, healthy, and grown right here — plant it and watch it take off.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
@@ -842,7 +842,7 @@ const products: SeedProduct[] = [
     category: "annual-flowers",
     description: "A season-long bloomer, greenhouse-grown and ready to go straight into beds, borders, or containers.",
     priceCents: 400,
-    size: "4.5\" pot",
+    size: "3.5\" pot",
     stock: 25,
   },
   {
