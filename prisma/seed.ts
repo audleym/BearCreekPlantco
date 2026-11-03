@@ -1069,6 +1069,17 @@ const products: SeedProduct[] = [
   },
 ];
 
+// The next Mother's Day (second Sunday of May) at noon UTC.
+function nextMothersDay(): Date {
+  const now = new Date();
+  for (let year = now.getUTCFullYear(); ; year++) {
+    const firstOfMay = new Date(Date.UTC(year, 4, 1, 12));
+    const firstSunday = 1 + ((7 - firstOfMay.getUTCDay()) % 7);
+    const mothersDay = new Date(Date.UTC(year, 4, firstSunday + 7, 12));
+    if (mothersDay > now) return mothersDay;
+  }
+}
+
 async function main() {
   console.log(`Seeding ${products.length} products...`);
   for (const p of products) {
@@ -1079,14 +1090,17 @@ async function main() {
     });
   }
 
-  // A handful of upcoming Saturday pickup dates, a few weeks out.
-  const today = new Date();
+  // Saturday and Sunday pickups for six weekends, starting Mother's Day weekend.
+  // Dates are fixed at noon UTC: re-running the seed can't create duplicates, and
+  // they display as the same calendar day in every US time zone.
   const pickupDates: Date[] = [];
-  const d = new Date(today);
-  d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7 || 7)); // next Saturday
-  for (let i = 0; i < 6; i++) {
-    pickupDates.push(new Date(d));
-    d.setDate(d.getDate() + 7);
+  const mothersDaySunday = nextMothersDay();
+  for (let weekend = 0; weekend < 6; weekend++) {
+    for (const dayOffset of [-1, 0]) {
+      const date = new Date(mothersDaySunday);
+      date.setUTCDate(date.getUTCDate() + weekend * 7 + dayOffset);
+      pickupDates.push(date);
+    }
   }
 
   for (const date of pickupDates) {
