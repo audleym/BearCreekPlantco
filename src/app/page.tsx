@@ -16,11 +16,11 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl sm:px-6 sm:pt-6">
+      <section className="mx-auto max-w-6xl px-4 pt-6 sm:px-6">
         <h1 className="sr-only">
           {siteConfig.name}: greenhouse grown, locally trusted plants
         </h1>
-        <div className="relative overflow-hidden shadow-sm sm:rounded-2xl">
+        <div className="relative overflow-hidden rounded-2xl shadow-sm">
           <Image
             src="/brand/hero-banner.jpg"
             alt={`${siteConfig.name} greenhouse filled with hanging baskets and annual flowers. Greenhouse Grown, Locally Trusted.`}
@@ -28,7 +28,7 @@ export default function HomePage() {
             height={941}
             preload
             sizes="(min-width: 1152px) 1104px, 100vw"
-            className="aspect-[5/4] w-full object-cover object-left sm:aspect-auto sm:h-auto"
+            className="h-auto w-full"
           />
           {/* Sits on the strip built into the photo; on phones it gets its own backing to stay tappable. */}
           <nav
