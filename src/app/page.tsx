@@ -16,11 +16,11 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-4 pt-6 sm:px-6">
+      <section className="mx-auto max-w-6xl sm:px-6 sm:pt-6">
         <h1 className="sr-only">
           {siteConfig.name}: greenhouse grown, locally trusted plants
         </h1>
-        <div className="relative overflow-hidden rounded-2xl shadow-sm">
+        <div className="relative overflow-hidden shadow-sm sm:rounded-2xl">
           <Image
             src="/brand/hero-banner.jpg"
             alt={`${siteConfig.name} greenhouse filled with hanging baskets and annual flowers. Greenhouse Grown, Locally Trusted.`}
@@ -28,12 +28,12 @@ export default function HomePage() {
             height={941}
             preload
             sizes="(min-width: 1152px) 1104px, 100vw"
-            className="h-auto w-full"
+            className="aspect-[1672/795] w-full object-cover object-top sm:aspect-auto sm:h-auto"
           />
-          {/* Sits on the strip built into the photo; on phones it gets its own backing to stay tappable. */}
+          {/* Larger screens: sits on the strip built into the photo. Phones: that empty strip is hidden and the buttons go just below the picture. */}
           <nav
             aria-label="Shop plants"
-            className="absolute inset-x-0 bottom-0 grid h-[15.5%] min-h-14 grid-cols-3 divide-x divide-white/40 bg-green-900/90 py-2 sm:bg-transparent sm:py-3"
+            className="grid min-h-14 grid-cols-3 divide-x divide-white/40 bg-green-900 py-2 sm:absolute sm:inset-x-0 sm:bottom-0 sm:h-[15.5%] sm:bg-transparent sm:py-3"
           >
             {heroButtons.map((button) => (
               <Link
